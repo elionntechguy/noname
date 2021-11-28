@@ -14,17 +14,9 @@ import Portfolio from './components/Portfolio';
 function App() {
   return (
       <React.Fragment>
-        <Router>
-          <Navigationbar />
-            <Switch>
-              <Route exact path="/" component={() => <Home />} />
-              <Route path="/about" component={About} />
-              <Route path="/resume" component={Resume} />
-              <Route path="/portfolio" component={Portfolio} />
-              <Route path="/contact" component={Contact} />
-            </Switch>
-          <Footer />
-        </Router>
+        <Navigationbar />
+        <Home />
+        <Footer />
       </React.Fragment>
   );
 }
